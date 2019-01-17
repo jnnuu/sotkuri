@@ -23,21 +23,8 @@ def create_connection(database):
 		print(e)
 
 	return None
-
-def select_all_tasks(conn):
-	cur = conn.cursor()
-	cur.execute("SELECT * FROM data ORDER BY NEWID()")
-
-	rows = cur.fetchall()
-
-	for row in rows:
-		webbrowser.open(row[1])
-		print(row)
 		
-	time.sleep(5)
-	os.system("taskkill /im chrome.exe /f")
-		
-def select_task_by_priority(conn, kategoria):
+def avaa_yksi_kategoria(conn, kategoria):
 	cur = conn.cursor()
 	cur.execute("SELECT * from data WHERE kategoria=?", (kategoria))
 
@@ -59,7 +46,7 @@ def main():
 		for id in range(10):
 			rand = random.randint(0,1374)
 			print("-------- OPENING " + str(list[rand]) + " LINKS --------")
-			select_task_by_priority(conn, list[rand])
+			avaa_yksi_kategoria(conn, list[rand])
 			
 if __name__ == '__main__':
 	main()
