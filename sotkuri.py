@@ -7,6 +7,8 @@ import csv
 from random import randint
 import random
 
+
+maara = 25 ##valitse tällä muuttujalla, kuinka monta satunnaistea kategoriaa haluat käydä läpi
 id = 1
 list = []
 with open('scratch.csv') as csvfile:
@@ -33,6 +35,7 @@ def avaa_yksi_kategoria(conn, kategoria):
 	for row in rows:
 		webbrowser.open(row[1])
 		print(row[1])
+	print("-------------------------------------------------------")
 	print("Sleeping for 7 seconds")
 	time.sleep(7)
 	print("Killing chrome.exe")
@@ -43,10 +46,11 @@ def main():
 
 	conn = create_connection(database)
 	with conn:
-		for id in range(10):
+		for id in range(maara):
 			rand = random.randint(0,1374)
 			print("-------- OPENING " + str(list[rand]) + " LINKS --------")
 			avaa_yksi_kategoria(conn, list[rand])
-			
+		print("-------------------------------------------------------")
+		print("Valmista, kaytiin lapi " + str(maara) + " kategoriaa.")
 if __name__ == '__main__':
 	main()
