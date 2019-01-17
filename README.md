@@ -1,5 +1,4 @@
 #sotkuri
-´´´´´´´
 
 Tällä python sovelluksella voit sekoittaa googlen algoritmit, syöttämällä random dataa googlelle.
 urlit.db tietokantaan on ladattu 18000 linkkiä 1375 kategoriasta. Python skripti hakee satunnaisella
@@ -16,12 +15,10 @@ sillä sotkuri.py käyttää tätä tiedostoa, ja sitä on käytetty tietokannan
 mutta ei koskea.
 
 Jos saat urlit.db tiedoston auki, voit tarkastella eri kategorioiden sisältämiä linkkejä. Ne ovat google-haun
-ensimmäiset hakutulokset hakusanalla [kategorian nimi].
+ensimmäiset hakutulokset hakusanalla (esim. Home Improvement).
 
 Voit tarkastella omia mainosten personontejasi osoitteessa adssettings.google.com
 Tällä sovelluksella voit sekoittaa mainosten räätälöintitapoja.
 
-,.,.,.,.,.,.,.,.,,,
-Jonni Uusi-Hakimo ,
-17.1.2019		  ,
-,.,.,.,.,.,.,.,.,.,
+Jonni Uusi-Hakimo 
+17.1.2019
