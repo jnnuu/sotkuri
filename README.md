@@ -17,8 +17,9 @@ mutta ei koskea.
 Jos saat urlit.db tiedoston auki, voit tarkastella eri kategorioiden sisältämiä linkkejä. Ne ovat google-haun
 ensimmäiset hakutulokset hakusanalla (esim. Home Improvement).
 
-Voit tarkastella omia mainosten personontejasi osoitteessa adssettings.google.com
-Tällä sovelluksella voit sekoittaa mainosten räätälöintitapoja.
+Voit tarkastella omia mainosten personontejasi osoitteessa adssettings.google.com 
+
+Tällä sovelluksella voit sekoittaa ne.
 
 Jonni Uusi-Hakimo 
 17.1.2019
